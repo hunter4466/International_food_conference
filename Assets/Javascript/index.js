@@ -5,6 +5,8 @@ const moreBtn = document.getElementById('more-btn')
 const closeMenuBtn = document.getElementById('close_menu_btn')
 const mobileNavbar = document.getElementById('mobile_navbar')
 const moreIcon = document.getElementById('more_icon')
+const moreBtnText = document.getElementById('more_btn_text')
+const body = document.getElementById('body')
 
 let sectionsArray = [];
 for (let i = 1; i < 6; i += 1){
@@ -97,15 +99,28 @@ for (let i = 0; i < speakersObject.length; i += 1) {
 }
 constructor(ElementsArray);
 
+let dropDownState = false
 moreBtn.addEventListener('click',(event)=>{
   event.preventDefault();
-  more_icon.style = "animation-name: rotate_icon_open;"
-  speakersBox.style = "animation-name: open_speakers;"
-  setTimeout(()=>{speakersBox.style = 'height:138vw;'},1000)
+  if(dropDownState){
+    dropDownState = false
+    more_icon.style = ""
+    more_icon.style = "animation-name: rotate_icon_close;"
+    speakersBox.style = "animation-name: close_speakers;"
+    setTimeout(()=>{speakersBox.style = '';more_icon.style = "";moreBtnText.innerHTML = "MORE";},950)
+  }
+  else{
+    
+    dropDownState = true
+    more_icon.style = "animation-name: rotate_icon_open;"
+    speakersBox.style = "animation-name: open_speakers;"
+    setTimeout(()=>{speakersBox.style = 'height:138vw;';more_icon.style = "transform: rotate(540deg);";moreBtnText.innerHTML = "CLOSE";body.scroll({
+      top: 10000,
+      behavior: 'smooth'
+    });},950)
+  }
+  
 })
-
-
-
 
 menuBtn.addEventListener('click', (event) => {
     event.preventDefault();
