@@ -1,17 +1,9 @@
 const speakersBox = document.getElementById('speakers_box')
-const menuBtn = document.getElementById('hamburger_btn')
-const menuDisplay = document.getElementById('menu_display')
 const moreBtn = document.getElementById('more-btn')
-const closeMenuBtn = document.getElementById('close_menu_btn')
-const mobileNavbar = document.getElementById('mobile_navbar')
 const moreIcon = document.getElementById('more_icon')
 const moreBtnText = document.getElementById('more_btn_text')
 const body = document.getElementById('body')
 
-let sectionsArray = [];
-for (let i = 1; i < 6; i += 1){
-   sectionsArray.push(document.getElementById(`sec_${i}`));
-}
 
 const speakersObject = [{imgPath: './Assets/Images/Photos/virgilio_martinez.png',
                                     name:'Virgilio Martínez',
@@ -121,23 +113,6 @@ moreBtn.addEventListener('click',(event)=>{
   }
   
 })
-
-menuBtn.addEventListener('click', (event) => {
-    event.preventDefault();
-    menuDisplay.style = 'display: flex; animation-name: menu_display_anim;';
-    for (let i = 0; i < sectionsArray.length; i += 1) {
-      sectionsArray[i].style = 'filter: blur(4px); -webkit-filter: blur(1vw);';
-    }
-    mobileNavbar.style = 'filter: blur(4px); -webkit-filter: blur(1vw);';
-  });
-  closeMenuBtn.addEventListener('click',(event)=>{
-    menuDisplay.style = 'display: flex; animation-name: menu_close_anim;';
-    for (let i = 0; i < sectionsArray.length; i += 1) {
-      sectionsArray[i].style = '';
-    }
-    mobileNavbar.style = '';
-    setTimeout(()=>{menuDisplay.style = 'display: none;'},480)
-  })
 
   document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     anchor.addEventListener('click', (event2) => {

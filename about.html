@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="./Assets/Styles/index.css">
+    <link type="text/css" rel="stylesheet" href="./Assets/Styles/about.css">
     <title>Document</title>
 </head>
 <body>
-    <nav class="mobile_navbar">
-        <img class="hamburger_btn">
-    </nav>
+    <div id="mobile_navbar" class="mobile_navbar">
+        <img id="hamburger_btn" class="hamburger_btn" alt="menu" src="Assets/Images/Icons/hamburger.png">
+    </div>
     <nav class="desktop_navbar">
         <div class="dt_navbar_flex">
             <ul class="dt_navbartop">
@@ -31,22 +31,64 @@
             </ul>
         </div>
     </nav>
-    <section class="about_content_section">
-        <div class="path_links"></div>
-        <h1 class="about_title"></h1>
-        <p class="about_paraph"></p>
-        <p class="contact_paraph"></p>
-        <p class="mail_link"></p>
-        <h2>Apega logo</h2>
-        
+    <div id="menu_display" class="menu_display">
+        <img id="close_menu_btn" class="close_menu_btn" alt="close" src="./Assets/Images/Icons/close.png">
+        <ul class="md_links">
+            <li class="md-item"><a class="md-link-asside" alt="Get home" href="./index.html">Home</a></li>
+            <li class="md-item"><a class="md-link" alt="Get to logo" href="#sec_2">Logo</a></li>
+            <li class="md-item"><a class="md-link" alt="Get to story" href="#sec_3">Story</a></li>
+            <li class="md-item"><a class="md-link" alt="Get to sponsors" href="#sec_4">Sponsors</a></li>
+            <li class="md-item"><a class="md-link" alt="Get to credits" href="#sec_5">Credits</a></li>
+        </ul>
+    </div>
+    <section id="sec_1" class="sec_1">
+        <div class="path_links"><img alt="home" src="./Assets/Images/Icons/home.png"><img alt="arrow icon" src="./Assets/Images/Icons/arrow.png"><p>About</p></div>
+        <h1 class="about_greetings">"Hello! Chefs community"</h1>
+        <h1 class="about_title">INTERNATIONAL FOOD CONFERENCE <span class="about_title2">2021</span></h1>
+        <p class="about_paraph">The international food conference bring the best chefs around the world to tell us about their experience, knowledge and techniques. This space is for all the people in the gastronomic industry, chefs, food and beverage managers, restaurant owners and students. This year we have prepared a special program for every people, we have lectures, exhibitions, forum, workshop and the event special feature, networking, swim deep into an endless line of people looking for someone like you with your talent, talk about job offers, techniques and more.</p>
+        <p class="contact_paraph">Please contact us per Email for any further questions about International Food Conference 2021!</p>
+        <p class="contact_mail">ifcsummit2021@ifcperu.org</p>
     </section>
-    <footer class="sec_5">
-            <div class="footer_logo"></div>
+    <section id="sec_2" class="sec_2">
+        <h1 class="sec_2_title">International Food Conference 2021 Logo</h1>
+        <div class="line_separator"></div>
+        <p class="logo_paraph">The logo of International Food Conference 2021 was decided throught the logo competition from 10. May to 15. June</p>
+        <img class="apega_logo_story" alt="apega_logo" src="./Assets/Images/Logos/apega.png">
+    </section>
+    <section id="sec_3" class="sec_3">
+        <h1 class="sec_3_title">See the past IF Conference Summits</h1>
+        <div class="line_separator"></div>
+        <p class="past_ifc_paraph">Take a look at the last two IF Conference Summits which took place in Bogota and Madrid</p>
+        <div class="previus_ifc_pic_box"> 
+            <img class="previus_ifc_picture" alt="2019 International Food Conference photo" src="./Assets/Images/Photos/ifc2019.png">
+            <img class="previus_ifc_picture" alt="2020 International Food Conference photo" src="./Assets/Images/Photos/ifc2020.png">
+        </div>
+    </section>
+    <section id="sec_4" class="sec_4">
+        <h1 class="sec_4_title">Sponsors</h1>
+        <div class="line_separator"></div>
+        <ul class="sponsor_ul">
+            <li class="sponsor"><img class="sponsor_img" alt="hilton" src="./Assets/Images/Logos/hilton.png"></li>
+            <li class="sponsor"><img class="sponsor_img" alt="kitchenaid" src="./Assets/Images/Logos/kitchenaid.png"></li>
+            <li class="sponsor"><img class="sponsor_img" alt="oster" src="./Assets/Images/Logos/oster.png"></li>
+            <li class="sponsor"><img class="sponsor_img" alt="rational" src="./Assets/Images/Logos/rational.png"></li>
+            <li class="sponsor"><img class="sponsor_img" alt="royalcrown" src="./Assets/Images/Logos/royalcrown.png"></li>
+        </ul>
+    </section>
+    <section id="sec_5" class="sec_5">
+        <img class="footer_logo" alt="apega" src="./Assets/Images/Logos/apega.png">
             <div class="creedits_flex">
-                <h1>2021 International Food Conference 2021</h1>
-                <p>Special thanks to peruvian gatronomy association (APEGA) for inspiring people around the world with their community help. To get more information about their work, visit them in <a src="https://www.apega.pe/"></a></p>
+                <h1 class="footer_first_text">2021 International Food Conference 2021</h1>
+                <p class="footer_second_text">Some Rights Reserved</p>
             </div>
-    </footer>
-    <script type="text/javascript" src="./Assets/Javascript/index.js"></script>
+    </section>
+    <section id="sec_6" class="sec_6">
+            <img class="footer_logo" alt="apega" src="./Assets/Images/Logos/apega.png">
+            <div class="credits_flex">
+                <h1 class="footer_first_text">2021 International Food Conference 2021</h1>
+                <p class="footer_second_text">Special thanks to peruvian gatronomy association (APEGA) for inspiring people around the world with their community help. To get more information about their work, visit them in <a src="https://www.apega.pe/"></a></p>
+        </div>
+    </section>
+    <script type="text/javascript" src="./Assets/Javascript/menu.js"></script>
 </body>
 </html>

@@ -158,14 +158,16 @@ html, body {
   color: white;
   line-height: 14vw;
   text-decoration: none;
+
 }
 .md-link-asside{
-  font-family: "Cocogoose7", serif;
-  font-size: 6vw;
-  color: white;
-  line-height: 14vw;
-  text-decoration: none;
-}
+    font-family: "Cocogoose7", serif;
+    font-size: 6vw;
+    color: white;
+    line-height: 14vw;
+    text-decoration: none;
+  
+  }
 
 @keyframes menu_display_anim {
     0% {
@@ -197,133 +199,103 @@ html, body {
     width: 100vw;
     left: 0.001vw;
     top: 0vw;
-    padding: 2vw;
+    padding: 3vw;
 }
-.sec_1_greetings{
+.path_links{
+    display:none;
+}
+.about_greetings{
     font-family: "cocogoose3";
+    text-align: center;
     font-size: 4vw;
     width: 80vw;
     margin-bottom: 1vw;
     margin-right: 0.001vw;
     color: #ec5242;
 }
-.sec_1_title{
+.about_title{
     font-family: "cocogoose10", serif;
+    text-align: center;
     font-size: 7vw;
-    width: 80vw;
+    width: 90vw;
     margin-top: 1vw;
     margin-bottom: 1vw;
     color: #ec5242;
 }
-.sec_1_title2{
+.about_title2{
     font-family: "cocogoose1", serif;
     font-size: 7vw;
     margin-top: 1vw;
     margin-bottom: 1vw;
     color: #ec5242;
 }
-.sec_1_parraph{
+.about_paraph{
     font-family: "Lato8", serif;
-    font-size: 4vw;
-    width: 94vw;
-    margin-top: 3vw;
-    margin-left: 3vw;
+    text-align: center;
+    font-size: 3vw;
+    width: 82vw;
+    margin-top: 10vw;
+    margin-left: 4vw;
     color: #272a31;
+    line-height:5vw;
 }
-.sec_1_date{
+.contact_paraph{
+    font-family: "Lato8", serif;
+    text-align: center;
+    font-size: 3vw;
+    width: 82vw;
+    margin-top: 10vw;
+    margin-left: 4vw;
+    color: #272a31;
+    line-height:5vw;
+}
+.contact_mail{
     font-family: "Lato1", serif;
-    font-size: 6vw;
-    width: 94vw;
-    margin-top: 3vw;
-    margin-left: 3vw;
-    margin-bottom: 1vw;
+    text-align: center;
+    font-size: 3vw;
+    width: 38vw;
+    margin-top: 2vw;
+    margin-left: 26vw;
     color: #272a31;
-}
-.sec_1_location{
-    font-family: "Lato8", serif;
-    font-size: 4vw;
-    width: 94vw;
-    margin-top:1vw;
-    margin-left: 3vw;
-    color: #272a31;
+    line-height:5vw;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1vw;
+    border-bottom-color: #272a31;
 }
 /* ------------ section 2 -------------- */
 .sec_2{
     position: relative;
-    margin-top:10vw;
+    margin-top:5vw;
     width: 100vw;
-    left: 0vw;
+    left: 0.001vw;
     top: 0vw;
-    margin-left: -2vw;
-    background-color: #272a31;
-    padding-top: 3vw;
-    height: fit-content;
+    padding: 3vw;
 }
 .sec_2_title{
-    font-family: "Lato6", serif;
-    font-size: 4vw;
-    margin-top:8vw;
-    margin-left: 33.5vw;
-    color: white;
-}
-.program_boxes{
-    display:flex;
-    flex-direction: column;
-    padding-left: 0.001vw;
-}
-.pr_box{
-    list-style-type: none;
-    display:flex;
-    flex-direction: row;
-    background-color: rgba(255,255,255, 0.2);
-    width: 92vw;
-    height:20vw;
-    margin-left: 4vw;
-    margin-top: 2vw;
-}
-.pr_box_icon{
-  width: 9vw;
-  height: 9vw;
-  padding-left: 5vw;
-  padding-top:5vw;
-  padding-bottom: 1vw;
-  padding-right:5vw;
-}
-.pr_box_title{
-    font-family: "Lato1", serif;
-    font-size: 3.5vw;
-    color:#ec5242;
-    width: 20vw;
-    height:20vw;
-    margin:0.001vw;
-    padding-top: 7.5vw;
-}
-.pr_box_parraph{
-    margin: 0vw;
-    color: white;
-    font-family: "Lato3", serif;
-    font-size: 3vw;
-    width: 56vw;
-    height: 16vw;
-    padding: 2vw;
-    line-height: 5vw;
-}
-.dt_sec_2_footer{
-    display:none;
-}
-.mb_sec_2_footer{
-    border-style:none;
-    background-color:#ec5242;
-    color: white;
     font-family: "Lato8", serif;
+    text-align: center;
     font-size: 4vw;
-    color: white;
-    margin-left: 12vw;
-    width: 76vw;
-    height: 17vw;
-    margin-bottom: 10vw;
-    margin-top: 5vw;
+    width: 50vw;
+    margin-bottom: 4vw;
+    margin-left: 21vw;
+    color: #272a31;
 }
+.logo_paraph{
+    font-family: "Lato8", serif;
+    text-align: center;
+    font-size: 3vw;
+    width: 82vw;
+    margin-top: 3vw;
+    margin-left: 4vw;
+    color: #272a31;
+    line-height:5vw;
+}
+.apega_logo_story{
+    width:60vw;
+    margin-top: 10vw;
+    margin-left: 15vw;
+}
+
 /* ------------ section 3 -------------- */
 .sec_3{
     position: relative;
@@ -337,120 +309,111 @@ html, body {
     height: fit-content;
 }
 .sec_3_title{
-    font-family: "Lato6", serif;
+    font-family: "Lato8", serif;
+    text-align: center;
     font-size: 4vw;
-    margin-top:8vw;
-    margin-left: 31.5vw;
+    width: 50vw;
+    margin-bottom: 4vw;
+    margin-left: 21vw;
     color: #272a31;
 }
-.speakers_box{
-    list-style-type: none;
-    display:flex;
-    flex-direction: column;
-    background-color: rgba(255,255,255, 0.2);
-    width: 92vw;
-    height:45vw;
-    margin-left: 4vw;
-    margin-top: 2vw;
-    overflow-y: hidden;
-    animation-duration: 1s;
-}
-@keyframes open_speakers{
-  0%{
-    height:45vw;
-  }
-  100%{
-    height:138vw;
-  }
-}
-@keyframes close_speakers{
-  0%{
-    height:138vw;
-  }
-  100%{
-    height:45vw;
-  }
-}
-.speaker_box{
-    display:flex;
-    flex-direction: row;
-    width:100%;
-    height:100%;
-    margin-top: 2vw;
-}
-.speaker_photo{
-    width:20vw;
-    height:20vw;
-}
-.speaker_content{
-    display:flex;
-    flex-direction: column;
-    padding-left: 3vw;
-}
-.speaker_name{
-    margin-top:0.001vw;
-    margin-bottom: 1vw;
-    font-family: "Lato1", serif;
-    color: #272a31;
+.past_ifc_paraph{
+    font-family: "Lato8", serif;
+    text-align: center;
     font-size: 3vw;
-}
-.speaker_activity{
-    margin-top:0.001vw;
-    margin-bottom: 0.001vw;
-    font-family: "Lato4", serif;
-    color:#ec5242;
-    font-size: 2vw;
-}
-.speaker_description{
-    font-family: "Lato1", serif;
+    width: 82vw;
+    margin-top: 3vw;
+    margin-left: 4vw;
     color: #272a31;
-    font-size: 2vw;
-    line-height: 3.5vw;
+    line-height:5vw;
 }
-.more-btn{
+.previus_ifc_pic_box{
     display:flex;
-    flex-direction: row;
-    margin-top: 2vw;
-    margin-left: 45vw;
-    height: 4vw;
+    flex-direction: column;
+    margin-left: 9vw;
 }
-.more_btn_text{
-    margin-top: 0.001vw;
-    font-family: "Lato1", serif;
+.previus_ifc_picture{
+    width: 80vw;
+    margin-top: 3vw;
 }
-.more_icon{
-    margin-top: 1vw;
-    margin-left:1.5vw;
-    width: 3vw;
-    height: 2vw;
-    animation-duration: 1s;
-}
-@keyframes rotate_icon_open{
- 0%{
-   transform: rotate(0deg);}
-   100%{
-    transform: rotate(540deg);}
-   } 
-
-@keyframes rotate_icon_close{
-    0%{
-      transform: rotate(180deg);}
-      100%{
-       transform: rotate(720deg);
-      } 
-    }
-
 /* ------------ section 4 -------------- */
 
 .sec_4{
-  display:none;
+    position: relative;
+    margin-top:10vw;
+    width: 100vw;
+    left: 0vw;
+    top: 0vw;
+    background-color: #272a31;
+    padding: 0vw;
+    height: fit-content;
+}
+.sec_4_title{
+    font-family: "Lato6", serif;
+    text-align: center;
+    font-size: 4vw;
+    width: 50vw;
+    padding-top: 6vw;
+    margin-bottom: 4vw;
+    margin-left: 21vw;
+    color: white;
+}
+.sponsor_ul{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    list-style: none;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+.sponsor_img{
+    text-align: center;
+    height:9vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 3vw;
 }
 
 /* ------------ section 5 -------------- */
-
 .sec_5{
-  display:none;
+    display:flex;
+    flex-direction: row;
+    margin-top: 1vw;
+    width: 100vw;
+    left: 0vw;
+    top: 0vw;
+    margin-left: -2vw;
+    background-color:#ffffff;
+    height: 20vw;
+    padding-left: 20vw;
+    padding-top: 6vw;
+  }
+  .footer_logo{
+    height: 12vw;
+    margin-right: 3vw;
+  }
+  .credits_flex{
+    display:flex;
+    flex-direction: column;
+  }
+  .footer_first_text{
+    font-family: "Lato3", serif;
+    color:#2d3038;
+    font-size: 2.5vw;
+    width: 40vw;
+    margin-top: 0.01vw;
+  }
+  .footer_second_text{
+    font-family: "Lato3", serif;
+    color:#2d3038;
+    font-size: 2.5vw;
+    width: 40vw;
+  }
+  /* ------------ section 6 -------------- */
+.sec_6{
+    display:none;
 }
+
 
 /* ------------------------------------- DESKTOP ------------------------------- */
 /* ------------------------------------- VERSION ------------------------------- */
@@ -549,6 +512,7 @@ html, body {
   width: 16px;
   height: 15px;
 }
+
 .dt_bottom_bar_item_first{
   font-family: "Lato3", serif;
   font-size: 12px;
@@ -599,6 +563,8 @@ html, body {
   margin-left: 10px;
   width: 75px;
 }
+
+
 
 /* ------------ section 1 -------------- */
 .sec_1{
