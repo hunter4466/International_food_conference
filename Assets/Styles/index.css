@@ -107,6 +107,8 @@ body {
   background-image: url('../Images/Background/mobile_background.png');
   background-size: 100%;
   background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
 }
 
 .line_separator {
@@ -244,7 +246,6 @@ body {
   width: 100vw;
   left: 0.001vw;
   top: 0;
-  padding: 2vw;
 }
 
 .sec_1_greetings {
@@ -254,6 +255,7 @@ body {
   margin-bottom: 1vw;
   margin-right: 0.001vw;
   color: #ec5242;
+  margin-left: 4vw;
 }
 
 .sec_1_title {
@@ -263,6 +265,7 @@ body {
   margin-top: 1vw;
   margin-bottom: 1vw;
   color: #ec5242;
+  margin-left: 4vw;
 }
 
 .sec_1_title2 {
@@ -271,12 +274,13 @@ body {
   margin-top: 1vw;
   margin-bottom: 1vw;
   color: #ec5242;
+  margin-left: 4vw;
 }
 
 .sec_1_parraph {
   font-family: "Lato8", serif;
   font-size: 4vw;
-  width: 94vw;
+  width: 90vw;
   margin-top: 3vw;
   margin-left: 3vw;
   color: #272a31;
@@ -285,20 +289,22 @@ body {
 .sec_1_date {
   font-family: "Lato1", serif;
   font-size: 6vw;
-  width: 94vw;
+  width: 85vw;
   margin-top: 3vw;
   margin-left: 3vw;
   margin-bottom: 1vw;
   color: #272a31;
+  margin-right: 0;
 }
 
 .sec_1_location {
   font-family: "Lato8", serif;
   font-size: 4vw;
-  width: 94vw;
+  width: 88vw;
   margin-top: 1vw;
   margin-left: 3vw;
   color: #272a31;
+  margin-right: 0;
 }
 
 /* ------------ section 2 -------------- */
@@ -326,6 +332,7 @@ body {
   display: flex;
   flex-direction: column;
   padding-left: 0.001vw;
+  margin-left: 1vw;
 }
 
 .pr_box {
@@ -488,6 +495,7 @@ body {
   margin-top: 2vw;
   margin-left: 45vw;
   height: 4vw;
+  margin-bottom: 10vw;
 }
 
 .more_btn_text {

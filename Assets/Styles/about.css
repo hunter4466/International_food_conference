@@ -107,6 +107,7 @@ body {
   background-image: url('../Images/Background/mobile_background.png');
   background-size: 100%;
   background-repeat: no-repeat;
+  margin: 0;
 }
 
 .line_separator {
@@ -244,7 +245,7 @@ body {
   width: 100vw;
   left: 0.001vw;
   top: 0;
-  padding: 3vw;
+  padding: 0;
 }
 
 .path_links {
@@ -322,7 +323,7 @@ body {
   width: 100vw;
   left: 0.001vw;
   top: 0;
-  padding: 3vw;
+  padding: 0;
 }
 
 .sec_2_title {
@@ -389,7 +390,7 @@ body {
 .previus_ifc_pic_box {
   display: flex;
   flex-direction: column;
-  margin-left: 9vw;
+  margin-left: 12vw;
 }
 
 .previus_ifc_picture {
@@ -443,7 +444,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 1vw;
-  width: 100vw;
+  width: 80vw;
   left: 0;
   top: 0;
   margin-left: -2vw;
