@@ -10,7 +10,7 @@ menuBtn.addEventListener('click', (event) => {
     event.preventDefault();
     menuDisplay.style = 'display: flex; animation-name: menu_display_anim;';
 
-      sectionsArray.forEach((element)=>{element.style = 'filter: blur(4px); -webkit-filter: blur(1vw);'});
+      sectionsArray.forEach((element)=>{element.style = 'animation-name: blur_open; animation-duration: 0.5s; filter: blur(4px); -webkit-filter: blur(1vw);'});
     
     mobileNavbar.style = 'filter: blur(4px); -webkit-filter: blur(1vw);';
   });
@@ -19,12 +19,12 @@ menuBtn.addEventListener('click', (event) => {
     event.preventDefault();
       menuDisplay.style = 'display: flex; animation-name: menu_close_anim;';
     mobileNavbar.style = '';
-    setTimeout(()=>{menuDisplay.style = 'display: none;'; sectionsArray.forEach((element)=>{element.style = ''});},480)
+    setTimeout(()=>{menuDisplay.style = 'display: none;'; sectionsArray.forEach((element)=>{element.style = 'animation-name: blur_close; animation-duration: 0.5s;'});},480)
   })
 
 aTags.forEach((element)=>{element.addEventListener('click',(event)=>{
     event.preventDefault();
     menuDisplay.style = 'display: flex; animation-name: menu_close_anim;';
   mobileNavbar.style = '';
-  setTimeout(()=>{menuDisplay.style = 'display: none;'; sectionsArray.forEach((element)=>{element.style = ''});},480)
+  setTimeout(()=>{menuDisplay.style = 'display: none;'; sectionsArray.forEach((element)=>{element.style = 'animation-name: blur_close; animation-duration: 0.5s;'});},480)
 })})
