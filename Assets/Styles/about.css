@@ -148,7 +148,6 @@ body {
   }
 }
 
-
 /* ------------ navigation bar -------------- */
 .desktop_navbar {
   display: none;
@@ -484,7 +483,6 @@ body {
   display: none;
 }
 
-
 /* ------------------------------------- DESKTOP ------------------------------- */
 
 /* ------------------------------------- VERSION ------------------------------- */
@@ -514,8 +512,6 @@ body {
   .line_separator2 {
     display: none;
   }
-
-
 
   /* ------------ navigation bar -------------- */
   .desktop_navbar {

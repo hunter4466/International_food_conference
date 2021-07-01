@@ -149,7 +149,6 @@ body {
   }
 }
 
-
 /* ------------ navigation bar -------------- */
 .desktop_navbar {
   display: none;
@@ -573,8 +572,6 @@ body {
     display: none;
   }
 
-
-
   /* ------------ navigation bar -------------- */
   .desktop_navbar {
     position: fixed;
@@ -978,7 +975,6 @@ body {
   .more-btn {
     display: none;
   }
-
 
   /* ------------ section 4 -------------- */
 
