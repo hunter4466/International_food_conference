@@ -1,34 +1,45 @@
-const speakersBox = document.getElementById('speakers_box')
-const moreBtn = document.getElementById('more-btn')
-const moreIcon = document.getElementById('more_icon')
-const moreBtnText = document.getElementById('more_btn_text')
-const body = document.getElementById('body')
+const speakersBox = document.getElementById('speakers_box');
+const moreBtn = document.getElementById('more-btn');
+const moreIcon = document.getElementById('more_icon');
+const moreBtnText = document.getElementById('more_btn_text');
+const body = document.getElementById('body');
 
-
-const speakersObject = [{imgPath: './Assets/Images/Photos/virgilio_martinez.png',
-                                    name:'Virgilio Martínez',
-                                    activity:'Central restaurant executive chef',
-                                    description:'Peruvian chef and restaurateur. He is considered one of the new generation of Peruvian chefs promoting the spread of Peruvian cuisine.',},
-                                {imgPath: './Assets/Images/Photos/massimo_bottura.png',
-                                name:'Massimo Bottura',
-                                activity:' Italian restaurateur and the chef patron of Osteria Francescana',
-                                description:" three-Michelin-star restaurant based in Modena, Italy which has been listed in the top 5 at The World's 50 Best Restaurants Awards since 2010 and received top ratings from LEspresso.",},
-                                {imgPath: './Assets/Images/Photos/gaston_acurio.png',
-                                name:'Gastón Acurio',
-                                activity:'Peruvian chef and ambassador of Peruvian cuisine',
-                                description:'He owns several restaurants throughout multiple countries and is the author of several books. In Peru, he is the host of his own television program and contributes to a few culinary magazines.',},
-                                {imgPath: './Assets/Images/Photos/david_munoz.png',
-                                name:'David Muñoz',
-                                activity:'Internationally recognised for his cooking and famous restaurants.',
-                                description:" His passion for cooking started when he was a child, used to take him frequently to the famous Madrid restaurant Viridiana.",},
-                                {imgPath: './Assets/Images/Photos/ferran_adria.png',
-                                name:'Ferran Adrià',
-                                activity:'Head chef of the elBulli restaurant in Roses on the Costa Brava',
-                                description:'Considered one of the best chefs in the world. He has often collaborated with his brother, the renowned pastry chef Albert Adrià.',},
-                                {imgPath: './Assets/Images/Photos/gordon_ramsay.png',
-                                name:'Gordon Ramsay',
-                                activity:'British chef, restaurateur, television personality and writer.',
-                                description:'Ramsay is known for his bluntness, as well as fiery temper, strict demeanour, and frequent use of profanity. He combines activities in the television, film, hospitality, and food industries and has promoted and hired various chefs who have apprenticed under his wing.',}]
+const speakersObject = [{
+  imgPath: './Assets/Images/Photos/virgilio_martinez.png',
+  name: 'Virgilio Martínez',
+  activity: 'Central restaurant executive chef',
+  description: 'Peruvian chef and restaurateur. He is considered one of the new generation of Peruvian chefs promoting the spread of Peruvian cuisine.',
+},
+{
+  imgPath: './Assets/Images/Photos/massimo_bottura.png',
+  name: 'Massimo Bottura',
+  activity: ' Italian restaurateur and the chef patron of Osteria Francescana',
+  description: " three-Michelin-star restaurant based in Modena, Italy which has been listed in the top 5 at The World's 50 Best Restaurants Awards since 2010 and received top ratings from LEspresso.",
+},
+{
+  imgPath: './Assets/Images/Photos/gaston_acurio.png',
+  name: 'Gastón Acurio',
+  activity: 'Peruvian chef and ambassador of Peruvian cuisine',
+  description: 'He owns several restaurants throughout multiple countries and is the author of several books. In Peru, he is the host of his own television program and contributes to a few culinary magazines.',
+},
+{
+  imgPath: './Assets/Images/Photos/david_munoz.png',
+  name: 'David Muñoz',
+  activity: 'Internationally recognised for his cooking and famous restaurants.',
+  description: ' His passion for cooking started when he was a child, used to take him frequently to the famous Madrid restaurant Viridiana.',
+},
+{
+  imgPath: './Assets/Images/Photos/ferran_adria.png',
+  name: 'Ferran Adrià',
+  activity: 'Head chef of the elBulli restaurant in Roses on the Costa Brava',
+  description: 'Considered one of the best chefs in the world. He has often collaborated with his brother, the renowned pastry chef Albert Adrià.',
+},
+{
+  imgPath: './Assets/Images/Photos/gordon_ramsay.png',
+  name: 'Gordon Ramsay',
+  activity: 'British chef, restaurateur, television personality and writer.',
+  description: 'Ramsay is known for his bluntness, as well as fiery temper, strict demeanour, and frequent use of profanity. He combines activities in the television, film, hospitality, and food industries and has promoted and hired various chefs who have apprenticed under his wing.',
+}];
 
 function create(obj) { return document.createElement(obj); }
 function constructor(obj) {
@@ -74,52 +85,50 @@ function constructor(obj) {
 const ElementsArray = [];
 
 for (let i = 0; i < speakersObject.length; i += 1) {
-    let boxMainDiv = create('div')
-    let photoDiv = create('img')
-    let descriptionDiv = create('div')
-    let nameH1 = create('h1')
-    let activityPh = create ('p')
-    let descrPh = create ('p')
-    ElementsArray.push([speakersBox,boxMainDiv,'speaker_box'])
-    ElementsArray.push([boxMainDiv,photoDiv,'speaker_photo'])
-    ElementsArray.push([boxMainDiv,descriptionDiv,'speaker_content'])
-    ElementsArray.push([descriptionDiv,nameH1,'speaker_name',speakersObject[i].name])
-    ElementsArray.push([descriptionDiv,activityPh,'speaker_activity',speakersObject[i].activity])
-    ElementsArray.push([descriptionDiv,descrPh,'speaker_description',speakersObject[i].description])
-    photoDiv.src = speakersObject[i].imgPath
-    photoDiv.alt = speakersObject[i].name
+  const boxMainDiv = create('div');
+  const photoDiv = create('img');
+  const descriptionDiv = create('div');
+  const nameH1 = create('h1');
+  const activityPh = create('p');
+  const descrPh = create('p');
+  ElementsArray.push([speakersBox, boxMainDiv, 'speaker_box']);
+  ElementsArray.push([boxMainDiv, photoDiv, 'speaker_photo']);
+  ElementsArray.push([boxMainDiv, descriptionDiv, 'speaker_content']);
+  ElementsArray.push([descriptionDiv, nameH1, 'speaker_name', speakersObject[i].name]);
+  ElementsArray.push([descriptionDiv, activityPh, 'speaker_activity', speakersObject[i].activity]);
+  ElementsArray.push([descriptionDiv, descrPh, 'speaker_description', speakersObject[i].description]);
+  photoDiv.src = speakersObject[i].imgPath;
+  photoDiv.alt = speakersObject[i].name;
 }
 constructor(ElementsArray);
 
-let dropDownState = false
-moreBtn.addEventListener('click',(event)=>{
+let dropDownState = false;
+moreBtn.addEventListener('click', (event) => {
   event.preventDefault();
-  if(dropDownState){
-    dropDownState = false
-    more_icon.style = ""
-    more_icon.style = "animation-name: rotate_icon_close;"
-    speakersBox.style = "animation-name: close_speakers;"
-    setTimeout(()=>{speakersBox.style = '';more_icon.style = "";moreBtnText.innerHTML = "MORE";},950)
-  }
-  else{
-    
-    dropDownState = true
-    more_icon.style = "animation-name: rotate_icon_open;"
-    speakersBox.style = "animation-name: open_speakers;"
-    setTimeout(()=>{speakersBox.style = 'height:138vw;';more_icon.style = "transform: rotate(540deg);";moreBtnText.innerHTML = "CLOSE";body.scroll({
-      top: 10000,
-      behavior: 'smooth'
-    });},950)
-  }
-  
-})
-
-  document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-    anchor.addEventListener('click', (event2) => {
-      event2.preventDefault();
-      document.querySelector(event2.currentTarget.getAttribute('href')).scrollIntoView({
+  if (dropDownState) {
+    dropDownState = false;
+    moreIcon.style = '';
+    moreIcon.style = 'animation-name: rotate_icon_close;';
+    speakersBox.style = 'animation-name: close_speakers;';
+    setTimeout(() => { speakersBox.style = ''; moreIcon.style = ''; moreBtnText.innerHTML = 'MORE'; }, 950);
+  } else {
+    dropDownState = true;
+    moreIcon.style = 'animation-name: rotate_icon_open;';
+    speakersBox.style = 'animation-name: open_speakers;';
+    setTimeout(() => {
+      speakersBox.style = 'height:138vw;'; moreIcon.style = 'transform: rotate(540deg);'; moreBtnText.innerHTML = 'CLOSE'; body.scroll({
+        top: 10000,
         behavior: 'smooth',
       });
+    }, 950);
+  }
+});
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener('click', (event2) => {
+    event2.preventDefault();
+    document.querySelector(event2.currentTarget.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth',
     });
   });
-  
+});

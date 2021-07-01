@@ -104,6 +104,9 @@ html,
 body {
   height: 100%;
   overflow: auto;
+  background-image: url('../Images/Background/mobile_background.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .line_separator {
@@ -245,7 +248,7 @@ body {
 }
 
 .sec_1_greetings {
-  font-family: "cocogoose3";
+  font-family: "cocogoose3", serif;
   font-size: 4vw;
   width: 80vw;
   margin-bottom: 1vw;
@@ -376,7 +379,6 @@ body {
   color: white;
   font-family: "Lato8", serif;
   font-size: 4vw;
-  color: white;
   margin-left: 12vw;
   width: 76vw;
   height: 17vw;
@@ -545,6 +547,9 @@ body {
     height: 100%;
     overflow: auto;
     user-select: none;
+    background-image: url('../Images/Background/desktop_background.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
   }
 
   .line_separator {
@@ -648,7 +653,6 @@ body {
     font-family: "Lato3", serif;
     font-size: 12px;
     margin-right: 20vw;
-    margin-left: 10vw;
     margin-top: 7px;
     list-style: none;
     color: #272a31;
@@ -685,7 +689,7 @@ body {
     height: 13px;
     font-family: "Lato3", serif;
     font-size: 10px;
-    margin-right: 13vw;
+    margin-right: 5vw;
     margin-top: 7px;
     list-style: none;
     color: #272a31;
@@ -716,7 +720,7 @@ body {
   }
 
   .sec_1_greetings {
-    font-family: "cocogoose3";
+    font-family: "cocogoose3", serif;
     font-size: 30px;
     width: 80vw;
     margin-bottom: 5px;
@@ -813,7 +817,6 @@ body {
     border-width: 0.1vw;
     border-color: transparent;
     transition: ease-in-out 0.3s;
-    
   }
 
   .pr_box:hover {
@@ -857,7 +860,6 @@ body {
     color: white;
     font-family: "Lato9", serif;
     font-size: 1vw;
-    color: white;
     margin-left: 42.5vw;
     width: 12.8vw;
     height: 1.2vw;
@@ -888,7 +890,6 @@ body {
     margin-left: 0.001vw;
     background-color: white;
     height: fit-content;
-    background-color: rgb(235, 235, 235);
   }
 
   .sec_3_title {
