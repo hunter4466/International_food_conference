@@ -266,7 +266,7 @@ body {
   text-align: center;
   font-size: 7vw;
   width: 90vw;
-  margin-top: 1vw;
+  margin-top: 5vw;
   margin-bottom: 1vw;
   color: #ec5242;
 }
@@ -698,7 +698,7 @@ body {
     font-family: "cocogoose10", serif;
     font-size: 5vw;
     width: 65vw;
-    margin-top: 1vw;
+    margin-top: 5vw;
     margin-bottom: 1vw;
     margin-right: 0.01vw;
     color: #ec5242;
@@ -906,18 +906,19 @@ body {
     margin-left: -2vw;
     background-color: #272727;
     height: 12vw;
-    padding-left: 24vw;
     padding-top: 6vw;
   }
 
   .footer_logo {
     height: 6vw;
     margin-right: 3vw;
+    margin-left: 24vw;
   }
 
   .credits_flex {
     display: flex;
     flex-direction: column;
+    
   }
 
   .footer_first_text {
