@@ -557,7 +557,7 @@ body {
     background-image: url('../Images/Background/desktop_background.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    padding-right: 0vw;
+    padding-right: 0;
   }
 
   .line_separator {
@@ -729,7 +729,7 @@ body {
     font-family: "cocogoose3", serif;
     font-size: 30px;
     width: 60vw;
-    margin-top:10vw;
+    margin-top: 10vw;
     margin-bottom: 5px;
     margin-right: 0.001px;
     color: #ec5242;
@@ -789,7 +789,7 @@ body {
     width: 98.5vw;
     left: 0.01px;
     top: 0.01px;
-    margin-left: 0vw;
+    margin-left: 0;
     background-color: #272a31;
     padding-top: 3vw;
     height: 37vw;
@@ -895,7 +895,7 @@ body {
     width: 98.5vw;
     left: 0;
     top: 0;
-    margin-left: 0vw;
+    margin-left: 0;
     background-color: white;
     height: fit-content;
   }
@@ -903,7 +903,7 @@ body {
   .sec_3_title {
     font-family: "Lato8", serif;
     font-size: 2vw;
-    width:30vw;
+    width: 30vw;
     margin-top: 1vw;
     margin-left: 42.5vw;
     color: #272a31;
@@ -923,7 +923,7 @@ body {
     overflow-x: initial;
     padding-left: 15vw;
     padding-top: 4vw;
-    margin-right: 0vw;
+    margin-right: 0;
   }
 
   .speaker_box {
@@ -990,7 +990,7 @@ body {
     width: 98.5vw;
     left: 0;
     top: 0;
-    margin-left: 0vw;
+    margin-left: 0;
     background-color: #272a31;
     height: 18vw;
   }
@@ -1034,7 +1034,7 @@ body {
     width: 90vw;
     left: 0;
     top: 0;
-    margin-left: 0vw;
+    margin-left: 0;
     background-color: #fff;
     height: 14vw;
     padding-top: 6vw;

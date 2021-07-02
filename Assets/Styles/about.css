@@ -918,7 +918,6 @@ body {
   .credits_flex {
     display: flex;
     flex-direction: column;
-    
   }
 
   .footer_first_text {
