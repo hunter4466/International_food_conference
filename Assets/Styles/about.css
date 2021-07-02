@@ -1,0 +1,936 @@
+/* ----------------- fuentes -------------------- */
+@font-face {
+  font-family: 'Cocogoose1';
+  src: url('../fonts/Cocogoose_Pro_Italic-trial.ttf');
+}
+
+@font-face {
+  font-family: 'Cocogoose2';
+  src: url('../fonts/Cocogoose_Pro_Light_Italic-trial.ttf');
+}
+
+@font-face {
+  font-family: 'Cocogoose3';
+  src: url('../fonts/Cocogoose_Pro_Light-trial.ttf');
+}
+
+@font-face {
+  font-family: 'Cocogoose4';
+  src: url('../fonts/Cocogoose_Pro_Semilight_Italic-trial.ttf');
+}
+
+@font-face {
+  font-family: 'Cocogoose5';
+  src: url('../fonts/Cocogoose_Pro_Semilight-trial.ttf');
+}
+
+@font-face {
+  font-family: 'Cocogoose6';
+  src: url('../fonts/Cocogoose_Pro_Thin_Italic-trial.ttf');
+}
+
+@font-face {
+  font-family: 'Cocogoose7';
+  src: url('../fonts/Cocogoose_Pro_Thin-trial.ttf');
+}
+
+@font-face {
+  font-family: 'Cocogoose8';
+  src: url('../fonts/Cocogoose_Pro_UltraLight_Italic-trial.ttf');
+}
+
+@font-face {
+  font-family: 'Cocogoose9';
+  src: url('../fonts/Cocogoose_Pro_Ultralight-trial.ttf');
+}
+
+@font-face {
+  font-family: 'Cocogoose10';
+  src: url('../fonts/Cocogoose_Pro-trial.ttf');
+}
+
+@font-face {
+  font-family: 'Lato1';
+  src: url('../fonts/Lato-Black.ttf');
+}
+
+@font-face {
+  font-family: 'Lato2';
+  src: url('../fonts/Lato-BlackItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Lato3';
+  src: url('../fonts/Lato-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Lato4';
+  src: url('../fonts/Lato-BoldItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Lato5';
+  src: url('../fonts/Lato-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Lato6';
+  src: url('../fonts/Lato-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Lato7';
+  src: url('../fonts/Lato-LightItalic.ttf');
+}
+
+@font-face {
+  font-family: 'Lato8';
+  src: url('../fonts/Lato-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Lato9';
+  src: url('../fonts/Lato-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Lato10';
+  src: url('../fonts/Lato-ThinItalic.ttf');
+}
+
+/* ------------ general classes -------------- */
+html,
+body {
+  height: 100%;
+  overflow: auto;
+  background-image: url('../Images/Background/mobile_background.png');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.line_separator {
+  border-bottom-style: solid;
+  border-width: 0.5vw;
+  border-bottom-color: #ec5242;
+  margin-left: 40.5vw;
+  width: 10vw;
+  height: 0.001vw;
+}
+
+.line_separator2 {
+  border-bottom-style: solid;
+  border-width: 0.5vw;
+  border-bottom-color: #a5a5a5;
+  margin-left: 5vw;
+  width: 90vw;
+  height: 0.001vw;
+}
+
+@keyframes blur_open {
+  0% {
+    -webkit-filter: blur(0);
+  }
+
+  100% {
+    -webkit-filter: blur(1vw);
+  }
+}
+
+@keyframes blur_close {
+  0% {
+    -webkit-filter: blur(1vw);
+  }
+
+  100% {
+    -webkit-filter: blur(0);
+  }
+}
+
+/* ------------ navigation bar -------------- */
+.desktop_navbar {
+  display: none;
+}
+
+.mobile_navbar {
+  position: fixed;
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  width: 100vw;
+  height: 18vw;
+  top: 0.001vw;
+  left: 0;
+  z-index: 4;
+}
+
+.hamburger_btn {
+  position: relative;
+  margin-top: 5vw;
+  margin-left: 7vw;
+  width: 8vw;
+  height: 8vw;
+}
+
+.menu_display {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #272a31a2;
+  z-index: 4;
+  animation-duration: 0.5s;
+  overflow: hidden;
+}
+
+.close_menu_btn {
+  width: 4vw;
+  height: 4vw;
+  margin-left: 85vw;
+  margin-top: 5vw;
+}
+
+.md_links {
+  list-style: none;
+}
+
+.md-link {
+  font-family: "Cocogoose7", serif;
+  font-size: 6vw;
+  color: white;
+  line-height: 14vw;
+  text-decoration: none;
+}
+
+.md-link-asside {
+  font-family: "Cocogoose7", serif;
+  font-size: 6vw;
+  color: white;
+  line-height: 14vw;
+  text-decoration: none;
+}
+
+@keyframes menu_display_anim {
+  0% {
+    width: 0.001vw;
+    height: 0.001vh;
+  }
+
+  100% {
+    width: 100vw;
+    height: 100vh;
+  }
+}
+
+@keyframes menu_close_anim {
+  0% {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  100% {
+    width: 0.001vw;
+    height: 0.001vh;
+  }
+}
+
+/* ------------ section 1 -------------- */
+.sec_1 {
+  position: relative;
+  margin-top: 19vw;
+  width: 100vw;
+  left: 0.001vw;
+  top: 0;
+  padding: 0;
+}
+
+.path_links {
+  display: none;
+}
+
+.about_greetings {
+  font-family: "cocogoose3", serif;
+  text-align: center;
+  font-size: 4vw;
+  width: 80vw;
+  margin-bottom: 1vw;
+  margin-right: 0.001vw;
+  color: #ec5242;
+}
+
+.about_title {
+  font-family: "cocogoose10", serif;
+  text-align: center;
+  font-size: 7vw;
+  width: 90vw;
+  margin-top: 5vw;
+  margin-bottom: 1vw;
+  color: #ec5242;
+}
+
+.about_title2 {
+  font-family: "cocogoose1", serif;
+  font-size: 7vw;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  color: #ec5242;
+}
+
+.about_paraph {
+  font-family: "Lato8", serif;
+  text-align: center;
+  font-size: 3vw;
+  width: 82vw;
+  margin-top: 10vw;
+  margin-left: 4vw;
+  color: #272a31;
+  line-height: 5vw;
+}
+
+.contact_paraph {
+  font-family: "Lato8", serif;
+  text-align: center;
+  font-size: 3vw;
+  width: 82vw;
+  margin-top: 10vw;
+  margin-left: 4vw;
+  color: #272a31;
+  line-height: 5vw;
+}
+
+.contact_mail {
+  font-family: "Lato1", serif;
+  text-align: center;
+  font-size: 3vw;
+  width: 38vw;
+  margin-top: 2vw;
+  margin-left: 26vw;
+  color: #272a31;
+  line-height: 5vw;
+  border-bottom-style: solid;
+  border-bottom-width: 0.1vw;
+  border-bottom-color: #272a31;
+}
+
+/* ------------ section 2 -------------- */
+.sec_2 {
+  position: relative;
+  margin-top: 5vw;
+  width: 100vw;
+  left: 0.001vw;
+  top: 0;
+  padding: 0;
+}
+
+.sec_2_title {
+  font-family: "Lato8", serif;
+  text-align: center;
+  font-size: 4vw;
+  width: 50vw;
+  margin-bottom: 4vw;
+  margin-left: 21vw;
+  color: #272a31;
+}
+
+.logo_paraph {
+  font-family: "Lato8", serif;
+  text-align: center;
+  font-size: 3vw;
+  width: 82vw;
+  margin-top: 3vw;
+  margin-left: 4vw;
+  color: #272a31;
+  line-height: 5vw;
+}
+
+.apega_logo_story {
+  width: 60vw;
+  margin-top: 10vw;
+  margin-left: 15vw;
+}
+
+/* ------------ section 3 -------------- */
+.sec_3 {
+  position: relative;
+  margin-top: 10vw;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  margin-left: -2vw;
+  background-color: white;
+  padding-top: 3vw;
+  height: fit-content;
+}
+
+.sec_3_title {
+  font-family: "Lato8", serif;
+  text-align: center;
+  font-size: 4vw;
+  width: 50vw;
+  margin-bottom: 4vw;
+  margin-left: 21vw;
+  color: #272a31;
+}
+
+.past_ifc_paraph {
+  font-family: "Lato8", serif;
+  text-align: center;
+  font-size: 3vw;
+  width: 82vw;
+  margin-top: 3vw;
+  margin-left: 4vw;
+  color: #272a31;
+  line-height: 5vw;
+}
+
+.previus_ifc_pic_box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 12vw;
+}
+
+.previus_ifc_picture {
+  width: 80vw;
+  margin-top: 3vw;
+}
+
+/* ------------ section 4 -------------- */
+
+.sec_4 {
+  position: relative;
+  margin-top: 10vw;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  background-color: #272a31;
+  padding: 0;
+  height: fit-content;
+}
+
+.sec_4_title {
+  font-family: "Lato6", serif;
+  text-align: center;
+  font-size: 4vw;
+  width: 50vw;
+  padding-top: 6vw;
+  margin-bottom: 4vw;
+  margin-left: 21vw;
+  color: white;
+}
+
+.sponsor_ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  list-style: none;
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+
+.sponsor_img {
+  text-align: center;
+  height: 9vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 3vw;
+}
+
+/* ------------ section 5 -------------- */
+.sec_5 {
+  display: flex;
+  flex-direction: row;
+  margin-top: 1vw;
+  width: 80vw;
+  left: 0;
+  top: 0;
+  margin-left: -2vw;
+  background-color: #fff;
+  height: 20vw;
+  padding-left: 20vw;
+  padding-top: 6vw;
+}
+
+.footer_logo {
+  height: 12vw;
+  margin-right: 3vw;
+}
+
+.credits_flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_first_text {
+  font-family: "Lato3", serif;
+  color: #2d3038;
+  font-size: 2.5vw;
+  width: 40vw;
+  margin-top: 0.01vw;
+}
+
+.footer_second_text {
+  font-family: "Lato3", serif;
+  color: #2d3038;
+  font-size: 2.5vw;
+  width: 40vw;
+}
+
+/* ------------ section 6 -------------- */
+.sec_6 {
+  display: none;
+}
+
+/* ------------------------------------- DESKTOP ------------------------------- */
+
+/* ------------------------------------- VERSION ------------------------------- */
+
+@media (min-width: 768px) {
+  /* ------------ general classes -------------- */
+  html,
+  body {
+    margin: 0.001px;
+    height: 100%;
+    overflow: auto;
+    user-select: none;
+    background-image: url('../Images/Background/desktop_background.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .line_separator {
+    border-bottom-style: solid;
+    border-width: 2px;
+    border-bottom-color: #ec5242;
+    margin-left: 20vw;
+    width: 4vw;
+    height: 0.001px;
+  }
+
+  .line_separator2 {
+    display: none;
+  }
+
+  /* ------------ navigation bar -------------- */
+  .desktop_navbar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 75px;
+    top: 0.001vw;
+    left: 0.001vw;
+    z-index: 4;
+  }
+
+  .mobile_navbar {
+    display: none;
+  }
+
+  /* ----- top ----- */
+  .dt_navbartop {
+    padding-left: 0.001vw;
+    margin: 0.001px;
+    background-color: #272a31;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100vw;
+    height: 25px;
+  }
+
+  .dt_nav_bar_item {
+    font-family: "Lato3", serif;
+    font-size: 12px;
+    margin-right: 1vw;
+    margin-top: 5px;
+    list-style: none;
+    color: white;
+    user-select: none;
+    transition: ease-in-out 0.3s;
+  }
+
+  .dt_nav_bar_item:hover {
+    color: #ec5242;
+  }
+
+  .dt_nav_bar_item_last {
+    font-family: "Lato3", serif;
+    font-size: 12px;
+    margin-right: 10vw;
+    margin-top: 5px;
+    list-style: none;
+    color: white;
+    user-select: none;
+    transition: ease-in-out 0.3s;
+  }
+
+  .dt_nav_bar_item_last:hover {
+    color: #ec5242;
+  }
+
+  /* ----- bottom ----- */
+
+  .dt_navbarbottom {
+    margin: 0.001px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1);
+    background-color: white;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100vw;
+    height: 50px;
+    padding: 0.001vw;
+  }
+
+  .dt_facebook-link {
+    width: 12px;
+    height: 15px;
+  }
+
+  .dt_twitter-link {
+    width: 16px;
+    height: 15px;
+  }
+
+  .dt_bottom_bar_item_first {
+    font-family: "Lato3", serif;
+    font-size: 12px;
+    margin-right: 20vw;
+    margin-top: 7px;
+    list-style: none;
+    color: #272a31;
+    user-select: none;
+  }
+
+  .top_link {
+    text-decoration: none;
+    color: #272a31;
+    transition: ease-in-out 0.3s;
+  }
+
+  .top_link:hover {
+    color: #ec5242;
+  }
+
+  .item_first_img {
+    width: 65px;
+  }
+
+  .dt_bottom_bar_item {
+    font-family: "Lato3", serif;
+    font-size: 13px;
+    margin-right: 6vw;
+    margin-top: 17px;
+    list-style: none;
+    color: #272a31;
+    user-select: none;
+  }
+
+  .dt_bottom_bar_item_last {
+    border-style: solid;
+    width: 75px;
+    height: 13px;
+    font-family: "Lato3", serif;
+    font-size: 10px;
+    margin-right: 5vw;
+    margin-top: 7px;
+    list-style: none;
+    color: #272a31;
+    padding: 8px;
+    user-select: none;
+    transition: ease-in-out 0.3s;
+  }
+
+  .dt_bottom_bar_item_last:hover {
+    border-color: #ec5242;
+    color: #ec5242;
+  }
+
+  .dt_cc-campaign-link {
+    margin: 0.001px;
+    margin-left: 10px;
+    width: 75px;
+  }
+
+  /* ------------ section 1 -------------- */
+  .sec_1 {
+    position: relative;
+    margin-top: 40px;
+    width: 70vw;
+    left: 0.001vw;
+    top: 0;
+    padding-left: 17.5vw;
+  }
+
+  .path_links {
+    margin-top: 2vw;
+    display: flex;
+    margin-left: 70vw;
+  }
+
+  .path_links_home {
+    margin-top: 0.2vw;
+    height: 12px;
+  }
+
+  .path_links_arrow {
+    margin-top: 0.5vw;
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+    height: 6px;
+    transform: rotate(270deg);
+  }
+
+  .path_links_about {
+    margin-top: 0.001vw;
+    font-family: "Lato3", serif;
+    font-size: 12px;
+  }
+
+  .about_greetings {
+    display: none;
+  }
+
+  .about_title {
+    font-family: "cocogoose10", serif;
+    font-size: 5vw;
+    width: 65vw;
+    margin-top: 5vw;
+    margin-bottom: 1vw;
+    margin-right: 0.01vw;
+    color: #ec5242;
+  }
+
+  .about_title2 {
+    font-family: "cocogoose1", serif;
+    font-size: 5vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    color: #ec5242;
+  }
+
+  .about_paraph {
+    font-family: "Lato8", serif;
+    font-size: 1.3vw;
+    width: 65vw;
+    margin-top: 3vw;
+    margin-left: 0.001vw;
+    color: #272a31;
+    line-height: 25px;
+  }
+
+  .contact_paraph {
+    font-family: "Lato8", serif;
+    font-size: 1.3vw;
+    width: 65vw;
+    margin-top: 3vw;
+    margin-left: 0.001vw;
+    color: #272a31;
+    line-height: 25px;
+  }
+
+  .contact_mail {
+    font-family: "Lato1", serif;
+    text-align: center;
+    font-size: 1.2vw;
+    width: 16vw;
+    margin-top: 0.01vw;
+    margin-left: 23.5vw;
+    color: #272a31;
+    height: 3.2vw;
+    padding-top: 0;
+    border-bottom-style: solid;
+    border-bottom-width: 0.1vw;
+    border-bottom-color: #272a31;
+  }
+
+  /* ------------ section 2 -------------- */
+  .sec_2 {
+    position: relative;
+    margin-top: 40px;
+    width: 70vw;
+    left: 0.001vw;
+    top: 0;
+    padding-left: 27vw;
+  }
+
+  .sec_2_title {
+    font-family: "Lato8", serif;
+    font-size: 25px;
+    width: 55vw;
+    margin-top: 3vw;
+    margin-left: -5vw;
+    margin-bottom: 1vw;
+    color: #272a31;
+    line-height: 25px;
+  }
+
+  .logo_paraph {
+    font-family: "Lato8", serif;
+    font-size: 1.3vw;
+    width: 65vw;
+    margin-top: 1vw;
+    margin-left: -10vw;
+    color: #272a31;
+    line-height: 25px;
+  }
+
+  .apega_logo_story {
+    height: 15vw;
+    width: 30vw;
+    margin-left: 12vw;
+    margin-top: 2vw;
+  }
+
+  /* ------------ section 3 -------------- */
+  .sec_3 {
+    position: relative;
+    margin-top: 40px;
+    width: 70vw;
+    left: 0.001vw;
+    top: 0;
+    padding-left: 27vw;
+  }
+
+  .sec_3_title {
+    font-family: "Lato8", serif;
+    font-size: 25px;
+    width: 55vw;
+    margin-top: 3vw;
+    margin-left: -5vw;
+    margin-bottom: 1vw;
+    color: #272a31;
+    line-height: 25px;
+  }
+
+  .past_ifc_paraph {
+    font-family: "Lato8", serif;
+    font-size: 1.3vw;
+    width: 65vw;
+    margin-top: 1vw;
+    margin-left: -10vw;
+    color: #272a31;
+    line-height: 25px;
+  }
+
+  .previus_ifc_pic_box {
+    display: flex;
+    flex-direction: row;
+    margin-left: -7vw;
+    margin-bottom: 5vw;
+  }
+
+  .previus_ifc_picture {
+    width: 30vw;
+    margin-right: 0.8vw;
+    margin-left: 0.8vw;
+  }
+
+  .speaker_box {
+    display: flex;
+    flex-direction: row;
+    width: 34.9vw;
+    height: 10vw;
+    margin: 0.01vw;
+    padding: 0.01vw;
+    background-color: rgb(235, 235, 235);
+    transition: ease-in-out 0.3s;
+  }
+
+  .speaker_box:hover {
+    transform: scale(1.5);
+    z-index: 3;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .speaker_photo {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .speaker_content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2vw;
+  }
+
+  .speaker_name {
+    margin-top: 0.001vw;
+    margin-bottom: 1vw;
+    font-family: "Lato1", serif;
+    color: #272a31;
+    font-size: 1.2vw;
+  }
+
+  .speaker_activity {
+    margin-top: 0.001vw;
+    margin-bottom: 0.001vw;
+    font-family: "Lato4", serif;
+    color: #ec5242;
+    font-size: 1vw;
+  }
+
+  .speaker_description {
+    font-family: "Lato1", serif;
+    color: #272a31;
+    font-size: 1vw;
+    line-height: 1vw;
+  }
+
+  .more-btn {
+    display: none;
+  }
+
+  /* ------------ section 4 -------------- */
+
+  .sec_4 {
+    display: none;
+  }
+
+  /* ------------ section 5 -------------- */
+  .sec_5 {
+    display: none;
+  }
+
+  /* ------------ section 6 -------------- */
+  .sec_6 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1vw;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    margin-left: -2vw;
+    background-color: #272727;
+    height: 12vw;
+    padding-top: 6vw;
+  }
+
+  .footer_logo {
+    height: 6vw;
+    margin-right: 3vw;
+    margin-left: 24vw;
+  }
+
+  .credits_flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer_first_text {
+    font-family: "Lato1", serif;
+    color: white;
+    font-size: 1vw;
+    width: 40vw;
+  }
+
+  .footer_second_text {
+    font-family: "Lato3", serif;
+    color: white;
+    font-size: 1vw;
+    width: 40vw;
+  }
+}
